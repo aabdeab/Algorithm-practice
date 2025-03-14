@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
 using namespace std;
 
 class Solution {
@@ -33,3 +34,11 @@ public:
         
     }
 };
+
+int main(){
+    Solution solution;
+    vector<int> nums={2,3,1,2,4,3};
+    int target=7;
+    cout<<solution.minSubArrayLen(target,nums);
+    return 0;
+}
