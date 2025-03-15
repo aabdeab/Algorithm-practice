@@ -1,5 +1,4 @@
-// C++ implementation of De-queue using circular
-// array
+
 #include <iostream>
 using namespace std;
 

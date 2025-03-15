@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Queue{
+    public:
+    deque<int> dq;
+    Queue(){};
+    Queue(int n){
+        dq.push_back(n);
+    }
+    void push(int n){
+        dq.push_back(n);
+    }
+    void pop(){
+        if(dq.empty()){
+            cout<<"Queue is empty"<<endl;
+            return;
+        }
+        dq.pop_front();
+    }
+    bool empty() {
+        return dq.empty();
+    }
+    int front() {
+        return dq.front();
+    }
+};
+int main(){
+    Queue q;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+    q.push(4);
+    q.push(5);
+    while(!q.empty()){
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+    return 0;
+}
