@@ -1,0 +1,1 @@
+here I used a Fenwick tree to optimize queries(update,fetch) to o(logn) complexity
