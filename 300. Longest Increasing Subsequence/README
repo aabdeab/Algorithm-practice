@@ -1,0 +1,16 @@
+# 🧩 Longest Increasing Subsequence (LIS)
+
+This project showcases three different solutions to the **Longest Increasing Subsequence (LIS)** problem, demonstrating the evolution from naive approaches to a highly optimized one suitable for large-scale data.
+
+### 🚀 Approaches Overview
+
+- **Dynamic Programming – O(n²)**  
+  A classical bottom-up approach where we track the length of the LIS ending at each index. This method relies on pairwise comparisons and builds up the result incrementally. Interestingly, this version can also be derived by transforming the LIS problem into a **Longest Common Subsequence (LCS)** problem—by computing the LCS between the input array and its sorted version (after removing duplicates).
+
+- **Iterative Optimization – O(n²)**  
+  A refined iteration of the classic DP approach with cleaner structure and better practical performance. While the complexity remains quadratic, the improvements lie in the implementation clarity and minor performance gains due to fewer redundant operations.
+
+- **Binary Indexed Tree (Fenwick Tree) – O(n log n)** 🔥  
+  The most efficient solution implemented here. It uses a Fenwick Tree to perform prefix maximum queries and updates in logarithmic time. This requires **coordinate compression** to map values into a manageable range and enables solving the LIS problem efficiently even with large inputs—ideal for competitive programming and real-world applications with tight constraints.
+
+---
